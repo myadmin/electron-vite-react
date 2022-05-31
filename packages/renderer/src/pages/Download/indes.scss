@@ -1,0 +1,50 @@
+.download-ing {
+  position: absolute;
+  top: 86px;
+  right: 24px;
+  bottom: 0;
+  left: 24px;
+  overflow-y: auto;
+  .download-item {
+      height: 40px;
+      background-color: antiquewhite;
+      position: relative;
+      margin-bottom: 10px;
+      .progress {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 3px;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 0 2px 2px 0;
+          .progress-item {
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: aqua;
+          }
+      }
+      .download-status {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px;
+          .status-left {
+              display: flex;
+              p {
+                  margin-bottom: 0;
+                  margin-right: 10px;
+              }
+          }
+      }
+  }
+}
